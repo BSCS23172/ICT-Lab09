@@ -1,0 +1,129 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styles for all pages */
+body {
+    font-family: 'Raleway', sans-serif;
+    background: url('overlay.png'), url('banner.jpg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff; /* Set text color to white */
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+/* Header styles for all pages */
+.banner .navbar {
+    margin-top: 4%;
+}
+
+    .banner .navbar .navbar-brand {
+        color: #fff;
+        font-size: 1.8em;
+        font-weight: 700;
+        margin-left: 10%;
+    }
+
+.banner .nav {
+    margin-right: 10%;
+}
+
+    .banner .nav li a {
+        color: #aaa;
+        font-size: 1.2em;
+    }
+
+/* Content styles for all pages */
+.banner .info {
+    margin-top: 15%;
+    transform: translateY(-15%);
+}
+
+    .banner .info h1 {
+        font-size: 2.5em;
+        font-weight: 700;
+        color: #fff;
+        letter-spacing: 2px;
+    }
+
+    .banner .info p {
+        font-size: 2em;
+        font-weight: 500;
+        color: #aaa;
+        letter-spacing: 2px;
+    }
+
+    .banner .info a {
+        margin-left: 50%;
+        transform: translateX(-50%);
+        color: #fff;
+        background: #e91d43;
+        padding: 10px 20px;
+        font-size: 2em;
+        font-weight: 600;
+    }
+
+        .banner .info a:hover {
+            background: #e91e63;
+        }
+
+/* Additional styles for specific pages (index2.html, index3.html) */
+.body.index2 {
+    background-color: white; /* You can add specific styles for index2.html here */
+}
+
+.body.index3 {
+    /* You can add specific styles for index3.html here */
+}
+
+/* Product Listings Styles */
+.product-listing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px; /* Adjust top and side margin as needed */
+}
+
+.product {
+    width: calc(50% - 20px); /* Two products in a row with some spacing */
+    margin: 10px; /* Adjust margin for spacing */
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+    .product img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        display: block; /* Make sure the images are centered */
+        margin: 0 auto; /* Center horizontally */
+    }
+
+    .product h3 {
+        font-size: 1.5em;
+        font-weight: 600;
+        margin: 10px 0;
+    }
+
+product p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+    product p.price {
+        font-size: 1em;
+    }
+
+/* Add styles for your index3.html message */
+.index3-message {
+    color: #fff; /* Set the text color to white for index3.html message */
+}
